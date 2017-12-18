@@ -1,0 +1,113 @@
+body {
+    background-image: url('../img/background.png');
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.title,
+.subtitle {
+    text-align: center;
+    margin: 0;
+    padding-top: 15px;
+    color: white;
+}
+
+.player {
+    box-shadow: 0 2px 5px 0 orangered;
+    transition: all 400ms;
+    left: 10px;
+}
+
+.player,
+.tile {
+    width: 80px;
+    height: 80px;
+}
+
+.player1 {
+    position: absolute;
+    background-image: url('../img/img2.jpg');
+    background-size: cover;
+    top: 170px;
+}
+
+.player1.alter-ego {
+    background-image: url('../img/milky.jpg');
+}
+
+.player1::before {
+    position: relative;
+    content: 'P 1';
+    top: -15px;
+    left: 25%;
+    color: green;
+}
+
+.player2 {
+    position: absolute;
+    top: 250px;
+    background-image: url('../img/player1.jpg');
+    background-size: cover;
+}
+
+.player2.alter-ego {
+    background-image: url('../img/universe.jpg');
+}
+
+.player2::before {
+    position: relative;
+    content: 'P 2';
+    top: -15px;
+    left: 25%;
+    color: white;
+}
+
+.die-container {
+    max-width: 280px;
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.die {
+    margin: 0 auto;
+    display: block;
+    width: 60%;
+    cursor: pointer;
+}
+
+.die-container h1 {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateX(-70%);
+    margin: 0;
+    cursor: pointer;
+}
+
+.board-container {
+    text-align: center;
+    margin-top: 80px;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile {
+    box-sizing: border-box;
+    display: block;
+    background-image: url('../img/qqqq.jpg');
+    background-size: cover;
+    border: 2px solid blueviolet;
+    content: '';
+    margin: 5px;
+}
+
+.winner {
+    border-radius: 100%;
+    width: 260px;
+    height: 260px;
+}
